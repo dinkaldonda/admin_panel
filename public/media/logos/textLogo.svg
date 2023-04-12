@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="249" height="76" viewBox="0 0 249 76">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_114" data-name="Rectangle 114" width="33" height="19" transform="translate(775.017 416)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_59048" data-name="Group 59048" transform="translate(-282 -349)">
+    <text id="Travo" transform="translate(282 406)" fill="#fff" font-size="53" font-family="Nunito-SemiBold, Nunito" font-weight="600"><tspan x="0" y="0">Propertise</tspan></text>
+    <g id="Roof_White_M" transform="translate(-320.017 -67)" clip-path="url(#clip-path)">
+      <path id="Path_88" data-name="Path 88" d="M791.983,417v.013l0-.013,0,.015V417l15.648,11.806.334,6.012L791.986,422.76v-.048h0v.048L776,434.819l.334-6.012Z" transform="translate(-0.476 -0.476)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Path_89" data-name="Path 89" d="M785,418h4.193v3.014L785,424.289Z" transform="translate(-4.759 -0.952)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

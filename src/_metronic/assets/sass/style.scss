@@ -1,0 +1,126 @@
+//
+// Theme style
+//
+
+// Initialize
+@import 'init';
+
+// Components
+@import './core/components/components';
+@import 'components/components';
+
+// Layout
+@import './core/layout/base/layout';
+@import 'layout/layout';
+
+.fix-design {
+  overflow: auto;
+  height: 100vh;
+}
+.hover:hover span {
+  color: white !important;
+}
+a.menu-link.without-sub:hover span {
+  color: white !important;
+}
+a.menu-link.without-sub.active {
+  background-color: white !important;
+}
+a.menu-link.without-sub.active span:last-child {
+  color: #15ac8e !important;
+}
+a.menu-link.without-sub.active .bullet-dot {
+  background-color: #15ac8e !important;
+}
+#dropdown-basic {
+  color: #7e8299 !important;
+}
+#dropdown-basic {
+  background-color: #f5f8fa !important;
+}
+// input[type='date']::-webkit-calendar-picker-indicator {
+//   background: transparent;
+//   bottom: 0;
+//   color: transparent;
+//   cursor: pointer;
+//   height: auto;
+//   left: 0;
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+//   width: auto;
+// }
+// .form-select {
+//   padding: 0.5rem 3rem 0.5rem 1rem !important;
+// }
+// .form-control {
+//   padding: 0.5rem 3rem 0.5rem 1rem !important;
+// }
+.form-select.form-select-solid {
+  color: #a1a5b7 !important;
+}
+.dynamic-delete-button {
+  position: relative;
+  top: 4px;
+  margin: 0 8px;
+  color: #999;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.dynamic-delete-button:hover {
+  color: #777;
+}
+.dynamic-delete-button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.abc {
+  .svg-icon.svg-icon-warning {
+    color: var(--kt-text-warning) !important;
+    svg {
+      border: 1px solid var(--kt-text-warning);
+      border-radius: 50%;
+    }
+  }
+}
+.svg-icon.svg-icon-2x svg {
+  height: 1.5rem !important;
+  width: 1.5rem !important;
+}
+.otp-input {
+  input {
+    width: 3em !important;
+    text-align: center;
+    height: 3em;
+  }
+}
+
+.svg-icon-wrapper{
+  position: relative;
+  span {
+    color: rgb(255, 199, 0);
+    margin-left: 0px !important;
+    border-radius: 50%;
+    background-color: rgba(255, 199, 0, 0.19);
+    position: absolute;
+    right: -20px;
+    top: 7px;
+  }
+}
+
+
+.contact-details-wrapper {
+  justify-content: unset; 
+}
+.subtenant-mobile-wrapper{
+  display: inline-block;
+
+  .react-tel-input{
+    display: inline-block;
+    
+    input {
+      display: inline-block;
+    }
+  }
+}

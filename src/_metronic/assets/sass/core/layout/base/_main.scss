@@ -1,0 +1,192 @@
+//
+// Main
+//
+
+// General mode
+.app-main {
+  display: flex;
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+  // Base
+  .app-main {
+    transition: $app-main-transition;
+
+    @include property(padding-left, $app-main-padding-x);
+    @include property(padding-right, $app-main-padding-x);
+    @include property(padding-top, $app-main-padding-y);
+    @include property(padding-bottom, $app-main-padding-y);
+
+    @include property(margin-left, $app-main-margin-x);
+    @include property(margin-right, $app-main-margin-x);
+    @include property(margin-top, $app-main-margin-y);
+    @include property(margin-bottom, $app-main-margin-y);
+  }
+
+  // Integration
+  .app-main {
+    // Sidebar
+    [data-kt-app-sidebar-sticky='true'] & {
+      margin-left: calc(
+        var(--kt-app-sidebar-width) + var(--kt-app-sidebar-gap-start, 0px) +
+          var(--kt-app-sidebar-gap-end, 0px)
+      );
+    }
+
+    // Sidebar Panel
+    [data-kt-app-sidebar-panel-sticky='true'] & {
+      margin-left: calc(
+        var(--kt-app-sidebar-width) + var(--kt-app-sidebar-gap-start, 0px) +
+          var(--kt-app-sidebar-gap-end, 0px) + var(--kt-app-sidebar-panel-width) +
+          var(--kt-app-sidebar-panel-gap-start, 0px) + var(--kt-app-sidebar-panel-gap-end, 0px)
+      );
+    }
+
+    // Aside
+    [data-kt-app-aside-sticky='true'] & {
+      margin-right: calc(
+        var(--kt-app-aside-width) + var(--kt-app-aside-gap-start, 0px) +
+          var(--kt-app-aside-gap-end, 0px)
+      );
+    }
+  }
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+  // Base
+  .app-main {
+    @include property(padding-left, $app-main-padding-x-mobile);
+    @include property(padding-right, $app-main-padding-x-mobile);
+    @include property(padding-top, $app-main-padding-y-mobile);
+    @include property(padding-bottom, $app-main-padding-y-mobile);
+
+    @include property(margin-left, $app-main-margin-x-mobile);
+    @include property(margin-right, $app-main-margin-x-mobile);
+    @include property(margin-top, $app-main-margin-y-mobile);
+    @include property(margin-bottom, $app-main-margin-y-mobile);
+  }
+}
+
+.bg-green {
+  background-color: rgb(21, 172, 142);
+}
+.bg-green:hover {
+  background-color: rgb(21, 172, 142);
+  color: white;
+}
+.bg-green:active {
+  background-color: rgb(21, 172, 142);
+  color: white;
+}
+
+#dropdown-basic {
+  border: 1px solid #e4e6ef !important;
+  color: #b5b5c3 !important;
+  padding: 0.65rem 1rem !important;
+}
+#dropdown-basic {
+  text-align: left;
+  width: 100% !important;
+  background: white !important;
+}
+
+.dropdown-menu.show {
+  width: 100% !important;
+}
+
+.dropdown-item {
+  padding: 10px 12px !important;
+}
+
+thead {
+  color: #b5b5c3;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  font-size: 12px !important;
+}
+tbody {
+  color: black !important;
+}
+
+.text-green {
+  color: #007a59 !important;
+}
+
+.btn-green {
+  background-image: linear-gradient(to right, #007a59, #007a59);
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.btn-light-primary:hover,
+.btn.btn-light-primary:active:not(.btn-active),
+.btn.btn-light-primary:focus:not(.btn-active) {
+  background-image: linear-gradient(to right, #007a59, #007a59);
+  color: white !important;
+}
+
+.btn-light-primary {
+  color: #007a59 !important;
+}
+
+.stepper-icon,
+.stepper-check,
+.stepper-number {
+  background-color: #15ac8e !important;
+  color: white !important;
+}
+
+.btn-active-color-primary:hover span {
+  color: #007a59 !important;
+}
+
+.menu-link:hover span {
+  color: #007a59 !important;
+}
+
+.app-header-menu .menu .menu-item .menu-link.active span {
+  color: #007a59 !important;
+}
+
+.menu-item:hover a {
+  color: #007a59 !important;
+}
+
+.w-20p {
+  width: 20% !important;
+}
+
+.svg-icon-2:active svg {
+  color: #007a59 !important;
+}
+.btn.btn-active-color-primary.active svg {
+  color: #007a59 !important;
+}
+.text-hover-green:hover {
+  color: #007a59 !important;
+}
+.text-hover-green:active {
+  color: #007a59 !important;
+}
+.text-hover-green:hover svg {
+  color: #007a59 !important;
+}
+.btn.btn-active-light-primary.show span {
+  color: #007a59 !important;
+}
+
+.text-active-primary.active {
+  color: #007a59 !important;
+}
+
+.nav-line-tabs .nav-item .nav-link.active,
+.nav-line-tabs .nav-item .nav-link:hover:not(.disabled) {
+  border-bottom: 2px solid #007a59 !important;
+}
+
+.form-check-custom.form-check-solid .form-check-input:checked {
+  background-color: #007a59 !important;
+}
